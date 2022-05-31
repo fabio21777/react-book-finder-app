@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Titulo from './components/titulo';
+import InputText from './components/inputTexto/inputText';
 
-function App() {
-  return (
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      book:[]
+    };
+  }
+  passData = (data) => {
+    this.setState({book: data});
+    console.log('data passData app', data);
+ };
+
+  render() {
+    return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Titulo titulo = "Book Finder" />
+      <InputText passData={this.passData} />
+      <div>
+        {this.state.book.items?.map((book) => <h1 key={book.etag}> {book.volumeInfo.title} </h1>)}
+      </div>
     </div>
-  );
+  )}
 }
-
-export default App;

@@ -1,0 +1,29 @@
+input{
+    background: hsla(0,0%,100%,.6);
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    box-shadow: 0 2px rgba(0,0,0,.05);
+    width: 460px;
+    height: 40px;
+    font-size: 18px;
+    color: #424242;
+    text-align: center;
+    opacity: .8;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+input:focus{
+    opacity: 1;
+    outline: none;
+}
+input:hover{
+    opacity: 1;
+}
+
+.div-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
