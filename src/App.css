@@ -3,3 +3,9 @@ body{
   min-width: 100%;
   min-height: 100%;
 }
+.card-app{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

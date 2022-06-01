@@ -2,12 +2,13 @@ import React from 'react';
 import './App.css';
 import Titulo from './components/titulo';
 import InputText from './components/inputTexto/inputText';
+import Card from './components/card/card';
 
 export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      book:[]
+      book:'',
     };
   }
   passData = (data) => {
@@ -20,9 +21,9 @@ export default class App extends React.Component {
     <div className="App">
       <Titulo titulo = "Book Finder" />
       <InputText passData={this.passData} />
-      <div>
-        {this.state.book.items?.map((book) => <h1 key={book.etag}> {book.volumeInfo.title} </h1>)}
-      </div>
+        <div className='card-app'>
+          {this.state.book.items?.map((book) => <Card key={book.etag} volumeInfo={book.volumeInfo} > </Card>)}
+        </div>
     </div>
   )}
 }
