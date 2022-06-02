@@ -9,7 +9,21 @@ export default  class Card extends React.Component{
     render(){
         return (
             <div className="card">
-                <p>{this.props.volumeInfo.title}</p>
+                <div className="card-inf">
+                    <p className="titulo-book" >{this.props.volumeInfo.title}</p>
+                     <div>
+                        <span className= "inf-book-label" >Autor : </span>
+                        <span className="inf-book-value" >{this.props.volumeInfo?.authors?.shift() || 'Api não encontrou um autor'}</span>
+                    </div>
+                    <div>
+                        <span className= "inf-book-label" >Publicadora : </span>
+                        <span className="inf-book-value" >{this.props.volumeInfo.publisher || 'Api não encontrou um publicadora'}</span>
+                     </div>
+                     <div>
+                        <span className= "inf-book-label" >Publicado : </span>
+                        <span className="inf-book-value" >{this.props.volumeInfo.publishedDate || 'Api não encontrou a  data de publicação'}</span>
+                     </div>
+                </div>
                 <ImagemCard urlImagem ={this.props.volumeInfo.imageLinks.smallThumbnail}></ImagemCard>
             </div>
         )
