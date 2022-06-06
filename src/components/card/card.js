@@ -17,14 +17,14 @@ export default  class Card extends React.Component{
                     </div>
                     <div>
                         <span className= "inf-book-label" >Publicadora : </span>
-                        <span className="inf-book-value" >{this.props.volumeInfo.publisher || 'Api não encontrou um publicadora'}</span>
+                        <span className="inf-book-value" >{this.props.volumeInfo.publisher || 'Api não encontrou uma publicadora'}</span>
                      </div>
                      <div>
                         <span className= "inf-book-label" >Publicado : </span>
                         <span className="inf-book-value" >{this.props.volumeInfo.publishedDate || 'Api não encontrou a  data de publicação'}</span>
                      </div>
                 </div>
-                <ImagemCard urlImagem ={this.props.volumeInfo.imageLinks.smallThumbnail}></ImagemCard>
+                <ImagemCard urlImagem ={this.props.volumeInfo.imageLinks.thumbnail}></ImagemCard>
             </div>
         )
     }

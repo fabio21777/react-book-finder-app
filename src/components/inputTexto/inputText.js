@@ -1,7 +1,7 @@
 import React from 'react';
 import './input.css';
 import ButtonSubmit from '../buttonSubmit/buttonSubmit';
-import BuscarService from '../service/buscaService';
+import BuscarService from '../../service/buscaService';
 export default class InputText extends React.Component{
     constructor(props){
         super(props);
@@ -11,10 +11,15 @@ export default class InputText extends React.Component{
 
     handleChange = (event) => {
         this.setState({value: event.target.value});
+        this.setQuery(event.target.value);
     }
     passData = (data) => {
        this.props.passData(data);
      };
+
+     setQuery = (query) => {
+        this.props.setQuery(query);
+     }
     
      buscar = () => {
         this.buscarService.getBooks(this.state.value).then(response => {

@@ -1,0 +1,18 @@
+.search-btn{
+    right: 2px;
+    top: 2px;
+    height: 40px;
+    background: #ffa000;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding-top: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#search-btn, .clear {
+    position: absolute;
+    cursor: pointer;
+}
+

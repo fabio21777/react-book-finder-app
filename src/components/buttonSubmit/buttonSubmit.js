@@ -1,6 +1,6 @@
 
 import React from 'react';
-import BuscarService from '../service/buscaService';
+import BuscarService from '../../service/buscaService';
 import './buttpnSubmit.css';
 export default class ButtonSubmit extends React.Component{
     // eslint-disable-next-line no-useless-constructor

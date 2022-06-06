@@ -6,7 +6,7 @@ export default  class ImagemCard extends React.Component{
     render(){
         return (
             <figure>
-                <img src={this.props.urlImagem} alt="Minha Figura"/>
+                <img height="168" width="128" src={this.props.urlImagem} alt="Minha Figura"/>
             </figure>
         )
     }
