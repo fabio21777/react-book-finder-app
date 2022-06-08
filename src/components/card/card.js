@@ -24,7 +24,7 @@ export default  class Card extends React.Component{
                         <span className="inf-book-value" >{this.props.volumeInfo.publishedDate || 'Api não encontrou a  data de publicação'}</span>
                      </div>
                 </div>
-                <ImagemCard urlImagem ={this.props.volumeInfo.imageLinks.thumbnail}></ImagemCard>
+                <ImagemCard urlImagem ={this.props.volumeInfo?.imageLinks?.thumbnail}></ImagemCard>
             </div>
         )
     }

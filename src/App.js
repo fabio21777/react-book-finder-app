@@ -20,6 +20,15 @@ export default class App extends React.Component {
  setQuery = (query) => {
   this.setState({query: query});
  }
+ setLivros = (livros) => {
+    let data = [...this.state.book.items, ...livros];
+    let book = this.state.book;
+    book.items = [...data];
+    console.log('data setLivros app', data);
+    console.log('data setLivros app book->', book);
+    this.setState({book: book});
+    console.log('data setLivros app', this.state.book);
+ }
 
   render() {
     return (
@@ -29,7 +38,7 @@ export default class App extends React.Component {
         <div className='card-app'>
           {this.state.book.items?.map((book) => <Card key={book.etag} volumeInfo={book.volumeInfo} > </Card>)}
         </div>
-      <ButtonCarregarMais passData={this.state.book} query ={this.state.query}  />  
+      <ButtonCarregarMais setLivros={this.setLivros} passData={this.state.book} query ={this.state.query}  />  
     </div>
   )}
 }

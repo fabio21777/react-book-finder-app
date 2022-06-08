@@ -1,4 +1,4 @@
-.search-btn{
+.carregar-btn{
     right: 2px;
     top: 2px;
     height: 40px;
@@ -11,8 +11,15 @@
     text-transform: uppercase;
     cursor: pointer;
 }
-#search-btn, .clear {
+#carregar-btn, .clear {
     position: absolute;
     cursor: pointer;
+}
+.button-mais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 

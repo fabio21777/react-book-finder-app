@@ -13,16 +13,16 @@ export default class ButtonCarregarMais extends React.Component{
     buscar = () => {
         this.setState({startIndex:this.state.startIndex+40});
         this.buscarService.getBooks(this.props.query,this.state.startIndex).then(response => {
-            this.props.passData = [...response.data];
-            console.log('data passData botão carregar mais', this.props.passData);
+            this.props.setLivros(response.data.items);
         })
     }
 
     buttonCarregarMais = () => {
-        console.log('eu executo ---------',this.props.passData);
         if(this.props.passData){
             return(
-                <button onClick={this.buscar}   className='search-btn'>Carregar Mais</button>
+                <div className='button-mais'>
+                    <button onClick={this.buscar}   className='carregar-btn'>Carregar Mais</button>
+                </div>
             );
         }else{
             return(
