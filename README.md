@@ -7,7 +7,7 @@
   - Para executar o projeto e necessario ter o node instalado é um gerenciado de pacotes node npm ou yarn.
 
 **Instalação :**
-#### `yarn install` instalar os modulos necessarios para o projeto.
+#### `yarn install` instalar os modulos necessários para o projeto.
 
 #### `yarn start` iniciar a aplicação.
 
@@ -23,7 +23,7 @@
 
 <img src="https://github.com/fabio21777/react-book-finder-app/blob/main/assets/busca.png?raw=true" width="500px"  />
 
-**Resposividade**
+**Responsividade**
 
 
 <img src="https://github.com/fabio21777/react-book-finder-app/blob/main/assets/tela%20menor.png?raw=true" width="500px" />
