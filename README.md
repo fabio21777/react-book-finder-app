@@ -15,16 +15,17 @@
 **Aplicação :**
 
 **Home**
-<img src="https://raw.github.com/fabiosouza21777/itexto/main/assets/home.png" width="500px"/>
+<img src="https://github.com/fabio21777/react-book-finder-app/blob/main/assets/home.png?raw=true" width="500px"/>
 
 **Busca**
-<img src="https://raw.github.com/fabiosouza21777/itexto/main/assets/busca.png" width="500px"/>
+
+<img src="https://github.com/fabio21777/react-book-finder-app/blob/main/assets/busca.png?raw=true"/>
 
 **Resposividade**
-<img src="https://raw.github.com/fabiosouza21777/itexto/main/assets/tela menor" width="500px"/>
+<img src="https://github.com/fabio21777/react-book-finder-app/blob/main/assets/tela%20menor.png?raw=true" width="500px"/>
 
 **Paginação**
-<img src="https://raw.github.com/fabiosouza21777/itexto/main/assets/paginação.png" width="500px"/>
+<img src="https://github.com/fabio21777/react-book-finder-app/blob/main/assets/pagina%C3%A7%C3%A3o.png?raw=true" width="500px"/>
 
 
 
